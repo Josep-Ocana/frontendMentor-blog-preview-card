@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --font-Inter: 'Inter', sans-serif;
+  --yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+/*      Presets __________________________________________*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--Black);
+  text-decoration: none;
+}
+
+html {
+  background-color: var(--OffBlack);
+  font-family: var(--font-Inter);
+  font-size: 16px;
+}
+
 body {
-	background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
