@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-  --font-Inter: 'Inter', sans-serif;
+  --font-Figtree: 'Figtree', sans-serif;
   --yellow: hsl(47, 88%, 63%);
   --White: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 50%);
@@ -18,14 +18,56 @@
 }
 
 html {
-  background-color: var(--OffBlack);
-  font-family: var(--font-Inter);
+  background-color: var(--yellow);
+  font-family: var(--font-Figtree);
   font-size: 16px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+section {
+  margin-bottom: 24px;
+}
+
+/* CONTAINER */
+.container {
+  width: 384px;
+  height: 522px;
+  margin: 218px auto;
+  padding: 24px;
+  text-align: left;
+  background: var(--White);
+  border-radius: 20px;
+  box-shadow: 5px 5px 0 var(--Black);
+}
+
+/* Section image */
+.blog-image {
+  border-radius: 10px;
+}
+
+/* Section content */
+.content *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.category {
+  display: grid;
+  place-content: center;
+  width: 82px;
+  height: 29px;
+  border-radius: 4px;
+  padding: 12px;
+  background: var(--yellow);
+}
+
+.learning {
+  font-weight: 800;
+}
+
+.publish-date {
+  font-weight: 500;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 900;
 }
