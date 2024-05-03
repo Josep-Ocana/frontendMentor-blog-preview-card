@@ -23,16 +23,16 @@
 }
 
 html {
-	background: var(--yellow);
 	font-family: var(--font-Figtree);
 	font-size: 16px;
+	background: var(--yellow);
 }
 
 section {
 	margin-bottom: 24px;
 }
 
-/* CONTAINER */
+/* Container */
 .container {
 	max-width: 384px;
 	max-height: 522px;
@@ -61,8 +61,8 @@ section {
 	place-content: center;
 	width: 82px;
 	height: 29px;
-	border-radius: 4px;
 	padding: 4px 12px;
+	border-radius: 4px;
 	background: var(--yellow);
 }
 .content *:not(:first-child):hover,
@@ -116,28 +116,27 @@ section {
 /* Footer */
 .attribution {
 	width: 100vw;
-	height: 100px;
 	color: var(--grey);
+	text-decoration: none;
 	background-image: url('/assets/images/background.svg');
 	background-repeat: no-repeat;
 	background-size: 10em;
 	background-position: left -80px top;
-	text-decoration: none;
 	box-shadow: 0 -8px var(--Black);
 }
 .information {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url('/assets/images/rectangle.svg') no-repeat;
-	background-position: center;
+	background: url('/assets/images/white-button.svg') no-repeat;
 	background-size: 18em;
+	background-position: center;
 }
 
 #challenge,
 #coded {
+	margin: 8px;
 	padding: 5px;
-	margin: 10px;
 	font-size: 14px;
 }
 
@@ -161,11 +160,12 @@ section {
 @media (width <= 460px) {
 	.attribution {
 		background-position: right top;
+		background-size: 9em;
 	}
 
 	.container {
-		margin: 155px 24px;
 		height: 501px;
+		margin: 155px 24px;
 	}
 }
 /* Mobile Design 375px*/
@@ -175,8 +175,8 @@ section {
 	}
 
 	.information {
-		padding: 20px;
-		background: url('/assets/images/black-oval.svg') no-repeat center;
+		padding: 10px;
+		background: url('/assets/images/black-button.svg') no-repeat center;
 		background-size: 75%;
 	}
 
@@ -188,6 +188,7 @@ section {
 	#challenge,
 	#coded {
 		margin: 0;
+		padding: 5px;
 		font-size: 14px;
 	}
 }
