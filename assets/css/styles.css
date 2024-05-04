@@ -46,6 +46,10 @@ section {
 }
 
 /* Section image */
+.image-sect {
+	height: 200px;
+}
+
 .blog-image {
 	width: 100%;
 	border-radius: 10px;
